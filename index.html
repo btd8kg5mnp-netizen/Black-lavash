@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Lavash — Шаурма 24/7 в Москве</title>
+    <!-- Подключение внешнего файла стилей -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header>
+        <div class="header-content">
+            <div class="logo">BLACK <span>LAVASH</span> 24/7</div>
+            <div class="nav-links">
+                <a href="#about">О месте</a>
+                <a href="#menu">Меню</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный блок -->
+    <main>
+        <section class="hero" id="about">
+            <h1>Black Lavash</h1>
+            
+            <div class="rating-row">
+                <div class="stars">★★★★★</div>
+                <span>4.6 (355 оценок)</span>
+                <div class="cashback">Кешбэк 5% на покупки</div>
+            </div>
+
+            <div class="info-card">
+                <div class="info-text">
+                    <p>Black Lavash — это место, где вы можете насладиться вкусной и разнообразной шаурмой. Здесь вы найдете шаурму с говядиной, курицей, свининой и бараниной, приготовленную на углях. Работаем круглосуточно!</p>
+                    
+                    <div class="contacts" id="contacts">
+                        <span>🕒 Круглосуточно</span>
+                        <span>📞 <a href="tel:+79091636968" class="phone-link">+7 (909) 163-69-68</a></span>
+                        <span>📍 Ленинградское ш., 9, корп. 1, Москва (этаж 1)</span>
+                    </div>
+
+                    <a href="https://yandex.ru/maps/org/black_lavash/57723414885/?azimuth=0.11367706417173315&ll=37.500305%2C55.817364&z=17.36" target="_blank" class="btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+                        Маршрут
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Меню -->
+        <section class="menu-section" id="menu">
+            <h2>Меню</h2>
+            <div class="menu-grid">
+                <div class="menu-item" onclick="showToast('Black Lavash выбран!')">
+                    <span class="item-name">BLACK LAVASH</span>
+                    <span class="item-price">220 ₽</span>
+                </div>
+                <div class="menu-item" onclick="showToast('Шаурма в пите выбрана!')">
+                    <span class="item-name">В пите</span>
+                    <span class="item-price">200 ₽</span>
+                </div>
+                <div class="menu-item" onclick="showToast('Шаурма в чесночном лаваше выбрана!')">
+                    <span class="item-name">В чесночном лаваше</span>
+                    <span class="item-price">170 ₽</span>
+                </div>
+                <div class="menu-item" onclick="showToast('Шаурма в сырном лаваше выбрана!')">
+                    <span class="item-name">В сырном лаваше</span>
+                    <span class="item-price">170 ₽</span>
+                </div>
+                <div class="menu-item" onclick="showToast('Шаурма в обычном лаваше выбрана!')">
+                    <span class="item-name">В обычном лаваше</span>
+                    <span class="item-price">150 ₽</span>
+                </div>
+                <div class="menu-item" onclick="showToast('Люля-кебаб куриный выбран!')">
+                    <span class="item-name">Люля-кебаб куриный</span>
+                    <span class="item-price">200 ₽</span>
+                </div>
+                <div class="menu-item" onclick="showToast('Люля-кебаб говяжий выбран!')">
+                    <span class="item-name">Люля-кебаб говяжий</span>
+                    <span class="item-price">230 ₽</span>
+                </div>
+                <div class="menu-item" onclick="showToast('Куры гриль выбраны!')">
+                    <span class="item-name">Куры гриль</span>
+                    <span class="item-price">400-450 ₽</span>
+                </div>
+                <div class="menu-item" onclick="showToast('Сырный соус выбран!')">
+                    <span class="item-name">Соус сырный</span>
+                    <span class="item-price">40 ₽</span>
+                </div>
+                <div class="menu-item" onclick="showToast('Томатный соус выбран!')">
+                    <span class="item-name">Соус томатный</span>
+                    <span class="item-price">40 ₽</span>
+                </div>
+                <div class="menu-item" onclick="showToast('Чесночный соус выбран!')">
+                    <span class="item-name">Соус чесночный</span>
+                    <span class="item-price">40 ₽</span>
+                </div>
+                <div class="menu-item" onclick="showToast('Чай выбран!')">
+                    <span class="item-name">Чай черный, зелёный</span>
+                    <span class="item-price">30 ₽</span>
+                </div>
+                <div class="menu-item" onclick="showToast('Кофе выбран!')">
+                    <span class="item-name">Кофе</span>
+                    <span class="item-price">40 ₽</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <p>© 2024 Black Lavash. Все права защищены.</p>
+        <p class="footer-note">Информация и цены взяты с официального сайта на Яндекс.Картах.</p>
+    </footer>
+
+    <!-- Всплывающее уведомление -->
+    <div id="toast" class="toast">Товар добавлен</div>
+
+    <!-- Подключение внешнего файла скриптов -->
+    <script src="script.js"></script>
+</body>
+</html>
